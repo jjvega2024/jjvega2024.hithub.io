@@ -1,0 +1,66 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:20px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: mediumpurple;
+    color:#fa025d;
+    
+}
+
+
+div#container {
+	width:800px;
+    border:1px solid black;
+    margin:auto;
+    padding:40px;
+    background-color: rebeccapurple;
+    margin-bottom: auto;
+    border-radius:50px;
+}
+
+header {
+    text-align:center;
+    font-family:Impact, Arial Black, sans-serif;
+    color: whitesmoke;
+    border:solid purple;
+    border-radius:15px;
+    
+}
+
+h1,h2 {
+    margin:30px;
+    
+    
+}
+
+footer {
+    font-size:0.8em;
+    font-family:Geneva, Arial Black, sans-serif;
+    color:mediumpurple;
+    
+}
+
+img {
+    width:100%;
+    
+}
+
+figure {
+    
+    
+}
+
