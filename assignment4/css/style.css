@@ -30,6 +30,7 @@ header {
     font-size: 300px;
     color: #525354;
     text-shadow: 100px 40px 5px #0a306e;
+    font-family: "Inter", sans-serif;
 }
 
 .someguy {
@@ -41,6 +42,7 @@ header {
     text-shadow: 150px 40px 5px #7083a1;
     rotate: -30deg;
     display: inline-block;
+    font-family: "Inter", sans-serif;
 }
 
 .supereye {
@@ -50,6 +52,7 @@ header {
     top: 50px;
     right: 50px;
     text-shadow: 50px 100px 10px #324c75;
+    font-family: "Inter", sans-serif;
     
     
 }
@@ -61,6 +64,7 @@ header {
     right: 0px;
     text-shadow: 100px 100px 10px #98b9ed;
     color: #152338;
+    font-family: "Inter", sans-serif;
 }
 
 .omar {
@@ -68,6 +72,7 @@ header {
     color: #4779c9;
     rotate: 45deg;
     display: inline-block;
+    font-family: "Inter", sans-serif;
     
 }
 
@@ -78,6 +83,7 @@ header {
     left: 0px;
     text-shadow: 70px 100px 10px #b3ccf5;
     color: #2459ad;
+    font-family: "Inter", sans-serif;
    
 }
 
@@ -88,6 +94,7 @@ header {
     right: 0px;
     text-shadow: 2px 20px 10px #2f6bcc;
     color: #041a3d;
+    font-family: "Inter", sans-serif;
     
 }
 
@@ -96,6 +103,7 @@ header {
     color: #4779c9;
     rotate: -45deg;
     display: inline-block;
+    font-family: "Inter", sans-serif;
     
 }
 
@@ -106,6 +114,7 @@ header {
     right: 0px;
     text-shadow: 70px 100px 10px #b3ccf5;
     color: #2459ad;
+    font-family: "Inter", sans-serif;
     
     
 }
@@ -117,6 +126,7 @@ header {
     top: 50px;
     left: 50px;
     text-shadow: 50px 100px 10px #324c75;
+    font-family: "Inter", sans-serif;
     
     
 }
