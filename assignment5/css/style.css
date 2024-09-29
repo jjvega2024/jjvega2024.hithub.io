@@ -1,0 +1,314 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+	
+	
+}
+
+
+#container {
+	width: 900px;
+    border: 1px solid black;
+    margin: auto;
+    position: relative;
+    transition: all 6s;
+}
+
+#something {
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    right: 300px;
+    top: 300px;
+    border-radius: 20%;
+    background: red;
+    animation: evo1 3s infinite alternate
+}
+
+@keyframes evo1 {
+    0% { color: red; }
+    
+    100% { color: black; 
+            background: yellow;
+    
+    }
+    
+    
+}
+
+#something:hover {
+    transform: rotate(1800deg);
+    transition: all 2s;
+}
+
+#something2 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 20px;
+    border-radius: 70%;
+    background: green;
+     animation: evo2 5s infinite alternate
+}
+
+@keyframes evo2 {
+    0% { color: black; }
+    
+    100% { color: green; 
+            background: yellow;
+    
+    }
+    
+    
+}
+
+#something2:hover {
+    
+    transform: rotate(360deg);
+    transition: all 5s;
+    transform: translate(120px,50px);
+}
+
+#something3 {
+    width: 75px;
+    height: 150px;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    border-radius: 10%;
+    background: purple;
+     animation: evo3 10s infinite alternate
+}
+
+@keyframes evo3 {
+    0% { color: blue; }
+    
+    100% { color: purple; 
+            background: red;
+    
+    }
+    
+    
+}
+
+#something3:hover {
+    
+    transform: rotate(90deg);
+    transition: all 10s;
+}
+
+#something4 {
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    right: 300px;
+    bottom: 100px;
+    border-radius: 20%;
+    background: blue;
+     animation: evo4 6s infinite alternate
+}
+
+@keyframes evo4 {
+    0% { color: yellow; }
+    
+    100% { color: black; 
+            background: purple;
+    
+    }
+    
+    
+}
+
+#something4:hover {
+    
+    transform: rotate(3600deg);
+    transition: all 12s;
+    transform: translate(100px,50px);
+}
+
+#something5 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 300px;
+    border-radius: 40%;
+    background: yellow;
+     animation: evo5 9s infinite alternate
+}
+
+@keyframes evo5 {
+    0% { color: lime; }
+    
+    100% { color: blue; 
+            background: yellow;
+    
+    }
+    
+    
+}
+
+#something5:hover {
+    
+    transform: rotate(2000deg);
+    transition: all 4s;
+    transform: translate(500px,30px);
+}
+
+#something6 {
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    border-radius: 50%;
+    background: black;
+     animation: evo6 12s infinite alternate
+}
+
+@keyframes evo6 {
+    0% { color: pink; }
+    
+    100% { color: forestgreen; 
+            background: maroon;
+    
+    }
+    
+    
+}
+
+#something6:hover {
+    
+    transform: rotate(70deg);
+    transition: all 2s;
+    transform: translate(10px,50px);
+}
+
+#something7 {
+   width: 100px;
+    height: 150px;
+    position: absolute;
+    bottom: 300px;
+    border-radius: 10%;
+    background: pink;
+     animation: evo7 2s infinite alternate
+}
+
+@keyframes evo7 {
+    0% { color: red; }
+    
+    100% { color: green; 
+            background: yellow;
+    
+    }
+    
+    
+}
+
+#something7:hover {
+    
+    transform: rotate(500deg);
+    transition: all 5s;
+    transform: translate(101px,100px);
+}
+
+#something8 {
+    border-bottom: 50px solid #555;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 125px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+     animation: evo8 7s infinite alternate
+}
+
+@keyframes evo8 {
+    0% { color: black; }
+    
+    100% { color: purple; 
+            background: pink;
+    
+    }
+    
+    
+}
+
+#something8:hover {
+    
+    transform: rotate(1000deg);
+    transition: all 3s;
+    
+}
+
+#something9 {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    right: 0px;
+    bottom: 300px;
+    border-radius: 50%;
+    background: maroon;
+     animation: evo9 4s infinite alternate
+}
+
+@keyframes evo9 {
+    0% { color: maroon; }
+    
+    100% { color: black; 
+            background: blue;
+    
+    }
+    
+    
+}
+
+#something9:hover {
+    
+    transform: rotate(400deg);
+    transition: all 10s;
+    
+    transform: translate(150px,150px);
+}
+
+#something10 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 0px;
+    border-radius: 50%;
+    background: lime;
+     animation: evo10 8s infinite alternate
+}
+
+@keyframes evo10 {
+    0% { color: blue; }
+    
+    100% { color: green; 
+            background: black;
+    
+    }
+    
+    
+}
+
+#something10:hover {
+    
+    transform: rotate(900deg);
+    transform: translate(50px,50px);
+    transition: all 12s;
+}
