@@ -1,0 +1,122 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+body {
+	background:  url(../img/backgroundnew.png) fixed no-repeat center;
+        background-size: cover;
+	
+}
+
+
+#container {
+	border: 1px solid black;
+    padding: 20px;
+    width: 95%;
+    margin: auto;
+    background: url(../img/paper.jpg); fixed no repeat center;
+    background-size: cover;
+}
+
+section {
+    border: 3px solid black;
+    margin-bottom: 2em;
+    padding: 20px;
+    
+}
+
+section#author {
+    background:url(../img/conppr_yellow.jpg); fixed no repeat center;
+    background-size: cover;
+    border-radius: 20px;
+    color: darkblue;
+    font-family: "Open Sans", sans-serif;
+    line-height: 30px;
+    border-color: lightyellow;
+}
+
+section#mine {
+    font-family: "Montserrat", sans-serif;
+    background:url(../img/blue-linen-paper-texture.jpg); fixed no repeat center;
+    background-size: cover;
+    border-radius: 20px;
+    border-color: skyblue;
+    color: black;
+    line-height: 30px;
+    
+}
+
+header {
+    font-family: "Open Sans", sans-serif;
+}
+
+footer {
+    font-family: "Open Sans", sans-serif;
+    
+}
+
+
+
+
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+    section#author {
+        width:42%;
+    float: left;
+        
+    }
+    
+    section#mine {
+        
+        float: right;
+        width: 43%;
+    }
+	
+    footer {
+        clear: both;
+        
+    }
+	
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+    #container {
+        
+        width: 950px;
+        padding: 20px;
+    }
+	
+	
+} /* closes 1024px+ */
+
+
+
