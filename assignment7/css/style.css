@@ -1,0 +1,182 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+body {
+	font-family: Arial, sans-serif;
+	padding: 15px;
+    align-content: center;
+    font-size: 1.4em;
+}
+
+p {
+    
+}
+
+#container {
+    align-content: center;
+    background-color: beige;
+    bottom: 0px;
+    padding: 100px;
+    text-align: center;
+    
+}
+
+
+form {
+    border:1px solid black;
+    padding: 10px;
+    border-color: green;
+    height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  display: center;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    background: orange;
+    line-height: 1.4em;
+}
+
+form:hover {
+    padding: 50px;
+    transition: all 2s;
+    font-size: 1.4em;
+    
+    
+}
+
+input[type="button"] {
+      color: white;
+    background: black;
+    border: 0px;
+    border-radius: 6px;
+    padding: 6px;
+    
+}
+
+input[type="button"]:hover {
+    color: black;
+    background: white;
+}
+
+#message {
+font-family: Arial black, sans-serif;
+    font-size: 1.4em;
+    margin: auto;
+    padding: 10px;
+    line-height: 1.4em;
+}
+
+#message:hover {
+    color: green;
+    
+}
+
+.dot {
+}
+
+footer {
+    
+    font-size: 1em;
+}
+
+
+
+
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+    @keyframes Julian {
+        0% {background: beige;}
+        100%{background: brown;}
+        
+        
+    }
+	
+	
+	
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	body {
+	font-family: Arial, sans-serif;
+	padding: 15px;
+}
+
+
+#container {
+	align-content: center;
+    background-color: orange;
+    bottom: 0px;
+    padding: 300px;
+    text-align: center;
+}
+
+
+form {
+    border:1px solid black;
+    padding: 10px;
+    border-color: green;
+    height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  display: center;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    background: beige;
+}
+    
+    form:hover {
+    padding: 50px;
+    transition: all 2s;
+    font-size: 1.4em;
+    }
+
+input[type="button"] {
+      color: white;
+    background: black;
+    border: 0px;
+    border-radius: 3px;
+    padding: 4px;
+    
+}
+
+message {
+font-family: Arial, sans-serif;
+}
+
+	
+	
+	
+} /* closes 1024px+ */
+
+
+

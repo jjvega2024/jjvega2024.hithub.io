@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Assignment 7</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+    
+    <script>
+
+function pizzachoice() {
+    var answers = [
+        "W choice gangy &#x1F61C;",
+        "That one is kinda mid won't lie... &#128556;",
+        "DUDE THAT ONE IS FIREEEE!! &#128553;",
+        "I hate that one....A LOT! &#128563;",
+        "It's alright I guess... &#128530;",
+        "Honestly, you'd get killed in Italy for that one... &#128561;",
+        "Hey that one isn't too bad actually! &#128562;",
+        "What do you prefer to be called? A child or an idiot? &#128545;",
+        "Why did god give you tastebuds... &#128552;",
+        "Meh!"
+    ];
+    
+    var createAnswer = 
+        answers[Math.floor(Math.random()*answers.length)];
+                
+                document.getElementById("message").innerHTML=createAnswer;
+
+
+} //closes pizzachoice function
+        
+
+</script>
+	
+</head>
+
+
+<body>
+
+  <div id="container">
+      <span class="dot"></span>
+      
+      
+
+<header>
+    
+      
+      </header>
+
+<main>
+      <form>
+    <p>What City makes the BEST Pizza?</p>
+  <input type="text">
+  <input type="button" onclick="pizzachoice()" value="Submit">
+    </form>
+    
+    <p id="message"></p>
+      
+      </main>
+      
+      
+
+  </div><!-- close "container" -->
+    
+    <footer>
+        <p>&#169; Julian Vega, <span id= "year"> </span> </p>
+        
+        
+    </footer>
+  
+    <script>
+    document.getElementById("year").innerHTML = new
+    Date().getFullYear();
+    </script>
+
+</body>
+	
+</html> 
