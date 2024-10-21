@@ -1,0 +1,167 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+body {
+	font-family: arial, sans serif;
+	background: #b5651d;
+}
+
+
+#container {
+	width: 90%;
+    max-width: 900px;
+    padding: 15px;
+    background: #39FF14;
+}
+
+h1 {
+    text-align: center;
+    
+}
+
+#hidden1 {
+    background: #964B00;
+    color: yellow;
+    padding: 10px;
+    
+}
+
+figure.responsive {
+    position: relative;
+    padding-bottom: 56.25%;  /* 16:9 */
+    height: 0px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+figure.responsive iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+span#secret {
+    
+    cursor: pointer;
+    
+}
+
+span#secret:hover {
+    color: red;
+    
+}
+
+img {
+    max-width: 300px;
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+button {
+    margin: center;
+    padding: 3px;
+}
+
+span#secret2 {
+    
+    cursor: pointer;
+    
+}
+
+span#secret2:hover {
+    color: red;
+    
+}
+
+
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+    #container {
+        width: 700px;
+        margin: auto;
+        border: 1px solid white;
+        margin-top: 10%;
+    }
+	
+	
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+    #container {
+        width: 850px;
+        background: #39FF14;
+        
+        
+    }
+    
+    section#hidden2 {
+        position: absolute;
+        top: 0px;
+        left: 750px;
+        width: 400px;
+        box-shadow: 20px 20px 10px rgba(0,0,0,0.4);
+        background: red;
+        color: white;
+        padding: 20px;
+
+    }
+    
+    
+    figure.responsive {
+    position: relative;
+    padding-bottom: 56.25%;  /* 16:9 */
+    height: 0px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+figure.responsive iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+    
+    
+	
+	
+	
+} /* closes 1024px+ */
+
+
+

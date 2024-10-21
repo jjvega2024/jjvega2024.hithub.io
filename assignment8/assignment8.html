@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Assignment 8</title>
+	
+	<link rel="stylesheet" href="css/style.css">
+    
+    <button id="clickme">Click Me!</button>
+
+
+    
+    <!-- Link to jQuery on Google Hosted Libraries-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+
+
+</head>
+
+
+<body>
+
+  <div id="container">
+      
+
+      
+      
+<header>
+      <h1>Hidden Content Page</h1>
+      </header>
+      
+      <main>
+          
+          <section id="hidden3">
+      <figure>
+    <img src="img/burger.jpg" alt="A burger I had at a bar this weekend">
+    <figcaption>This is a burger I had this weekend at a bar!</figcaption>
+    </figure>
+          
+      <p>The cheeseburger I had was undeniably <span id=secret2>delicious—juicy patty</span>, perfectly melted cheese, and all the right toppings came together in a satisfying bite. However, the experience was marred by the lengthy wait: 45 minutes outside the bar, followed by another hour for our food to arrive. The free-for-all seating made the place chaotic, with patrons jostling for tables and the staff clearly overwhelmed. While the <span id="secret">burger</span> hit the spot, it wasn’t worth the nearly two hours spent waiting; the anticipation quickly turned into frustration, overshadowing the enjoyment of the meal. 
+</p>
+          
+          <button id="wut">Learn More</button>
+          
+          <section id="hidden1">
+          <header><h1>History of Cheeseburgers!</h1></header>
+          <p>
+              The cheeseburger, a beloved staple of American cuisine, traces its roots back to the early 20th century. While the exact origin is debated, many credit the creation to 1920s diners in California, who began adding cheese to the classic hamburger. The term "cheeseburger" was first documented in a 1928 menu from a Los Angeles restaurant. Its popularity skyrocketed post-World War II, fueled by the rise of fast food chains like McDonald's and Burger King, which helped cement its status as a quintessential American dish. Today, the cheeseburger has evolved into countless variations, reflecting global tastes and culinary innovations.
+                <button id="close">X</button>
+
+              </p>
+              
+              <section id="hidden2">
+          <header><h1>What makes a good cheeseburger?</h1></header>
+                  <section id="hidden4">
+    <figure class="responsive">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/f_e3NbtwKAo?si=Emxq3RH_zCCulGAl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <figcaption>Me when I can eat a cheeseburger</figcaption>
+</figure>
+          <p>
+              A good cheeseburger strikes the perfect balance between quality ingredients and thoughtful preparation. It starts with a juicy, well-seasoned beef patty, cooked to the desired level of doneness, which provides a satisfying bite. The cheese should melt beautifully, adding creaminess that complements the meat. Fresh, crisp toppings—like lettuce, tomatoes, and pickles—bring texture and brightness, while a toasted bun adds structure and flavor without overwhelming the filling. A touch of sauce, whether it's classic ketchup or a zesty aioli, can elevate the entire experience. Ultimately, a great cheeseburger is one that excites the senses and leaves you craving another bite.
+                <button id="close">X</button>
+
+              </p>
+          
+          </section>
+
+      
+      
+      
+      
+      </main>
+
+
+
+
+
+  </div><!-- close "container" -->
+  
+<script>
+  $(document).ready(function() {
+
+      $("section#hidden1").hide();
+      $("section#hidden2").hide();
+      $("section#hidden3").hide();
+    //$("section#hidden4").hide();
+      
+      $("button#wut").click(function () {
+          
+          $("section#hidden1").slideToggle(1500);
+          
+          //$("section#hidden1").slideDown(1500);
+          
+          //$("button#close").click(function () 
+              
+              //$("section#hidden1").slideUp(2000);
+              
+        
+          
+          
+      }); //close click function for wut
+      
+      $("button#clickme").click(function() {
+              
+              $("section#hidden3").slideToggle(1500);
+              
+          
+          }); //close click function for clickme
+      
+    $("span#secret2").click(function() {
+        $("hidden4").slideToggle(1200);
+        
+    }); //close hidden 4
+    
+    $("span#secret").click(function() {
+        
+        $("#hidden2").fadeToggle(1000);
+        
+        
+    });
+      
+      
+      
+  }); //close .ready()
+</script>
+	
+      
+      
+</body>
+	
+</html> 
