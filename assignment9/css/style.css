@@ -1,0 +1,147 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+h1 {
+    margin: center;
+    padding: 30px;
+    font-size: 2em;
+    line-height: 1em;
+}
+
+h2 {
+    margin: center;
+    font-size: 1.4em;
+    padding: 30px;
+}
+
+body {
+	font-family: Ubuntu, sans-serif;
+	
+}
+
+
+#container {
+	background: beige;
+    border: black 3px;
+    padding: 5%;
+    margin: auto;
+}
+
+figure {
+	margin:0px;
+	border:3px solid white;
+	padding:3%;
+    border-radius: 15px;
+
+}
+
+figure img {
+width: 100%;
+    margin: auto;
+    
+}
+header, footer {
+	background: black;
+	color:white;
+}
+
+header {
+	padding:2em;
+	text-align:center;
+}
+
+footer {
+	padding: 1em;
+}
+
+body {
+    background: beige;
+    
+}
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+    
+    main {
+    display: flex;
+        margin: auto;
+}
+	
+	body {
+        
+        background: white;
+        margin: auto;
+    }
+    
+    figure {
+	margin:0px;
+	border:3px solid black;
+	padding:3%;
+    border-radius: 20px;
+
+}
+    
+	
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+	 main {
+    display: flex;
+         margin: auto;
+}
+    #container {
+        display: flex;
+    flex-wrap: wrap;
+        background: beige;
+        height: auto;
+    }
+    
+    body {
+        
+        background: black;
+        margin: auto;
+        color: red;
+    }
+    
+    figure {
+	margin:0px;
+	border:3px solid brown;
+	padding:3%;
+    border-radius: 25px;
+
+}
+	
+	
+} /* closes 1024px+ */
+
+
+
