@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>The Survivors of The Internet</title>
+  <link rel="icon" type="image/png" href="img/DALL·E 2024-11-11 01.20.44 - A simplified, clean logo for _The Last Survivors of The Internet,_ based on the Dead Internet Theory. The design should be minimalist yet convey a sen.webp">
+	
+	<link rel="stylesheet" href="css/style.css">	
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <main>
+    <header>
+      <h1>
+        The Survivors of The Internet
+        </h1>
+    </header>
+  </main>
+    
+  <nav>
+    <ul class="inline">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="memoriam.html">Memoriam</a></li>
+      <li><a href="shop.html">Shop</a></li>
+    </ul>
+  </nav>
+
+  <div class="big_flex_container">
+    
+    <div class="image1">
+        <a href="https://www.istockphoto.com/photo/shot-of-a-young-woman-using-a-laptop-while-working-in-a-server-room-gm1347879996-425249195?searchscope=image%2Cfilm" target="_blank">
+            <figure>
+                <img src="img/istockphoto-1347879996-612x612.jpg" alt="NAME">
+            </figure>
+        </a>
+    </div>
+    <div class="flex-container">
+      <div id="data_container">
+        <section id="paragraph1">  
+          <p>
+            <h3>MEMBERSHIPS</h3>
+            The Last Survivors of the Internet is more than just a website—it’s a movement. A community of dedicated individuals working together to expose the truth about the bots infiltrating our digital lives. By joining us, you’ll not only gain access to exclusive content and tools to help you protect yourself online, but you’ll also become an integral part of a growing effort to reclaim the internet for real people.
+          </p>
+        </section>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div id="data_container">
+        <section id="paragraph1">  
+          <h3>Tier 1: Basic Survivor $500/month</h3>
+          <p>*For those who want to stay informed and protected.*
+            Access to exclusive content
+            Early access to articles, findings, and bot detection tips as soon as they're published.  
+            Basic Bot Detection Guides
+            Step-by-step tutorials on how to identify common bots and online threats.
+            Support Forum Access
+            Engage with fellow members, share insights, and discuss findings in our community forum.  
+            Monthly Newsletter
+            Receive updates on the latest developments in the bot world, including new research, articles, and upcoming initiatives.
+          </p>
+        </section>
+        <button class="tier1">Tier 1: Basic Survivor $500/month</button>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div id="data_container">
+        <section id="paragraph1">  
+          <h3>Tier 2: Advanced Survivor $1500/month</h3>
+          <p>*For those who want more personalized support and a deeper connection with the team.*
+            All benefits from Tier 1 
+            Priority Email Support
+            Have questions? Get direct support from our team of experts. Whether you need help with bot detection or want advice on protecting your privacy online, we’re here for you.  
+            Early Access to Reports & Research
+            Be the first to receive our latest in-depth reports, case studies, and findings on bot activity.  
+            Monthly Q&A Calls
+            Join live Q&A sessions with the staff where you can ask questions, share your experiences, and discuss the latest developments with our experts.  
+            Exclusive Member-Only Content
+            Special articles, video content, and in-depth research reserved for Advanced Survivors.
+          </p>
+        </section>
+        <button class="tier1">Tier 2: Advanced Survivor $1500/month</button>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div id="data_container">
+        <section id="paragraph1">  
+          <h3>Tier 3: Elite Survivor $3000/month</h3>
+          <p>*For those who want more personalized support and a deeper connection with the team.*
+            All benefits from Tier 1 
+            Priority Email Support
+            Have questions? Get direct support from our team of experts. Whether you need help with bot detection or want advice on protecting your privacy online, we’re here for you.  
+            Early Access to Reports & Research
+            Be the first to receive our latest in-depth reports, case studies, and findings on bot activity.  
+            Monthly Q&A Calls
+            Join live Q&A sessions with the staff where you can ask questions, share your experiences, and discuss the latest developments with our experts.  
+            Exclusive Member-Only Content
+            Special articles, video content, and in-depth research reserved for Advanced Survivors.
+          </p>
+        </section>
+        <button class="tier1">Tier 3: Elite Survivor $3000/month</button>
+      </div>
+    </div>
+    <div class="footer-btm"></div>
+  </div>
+
+  <script>
+    var acc = document.getElementsByClassName("tier1");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
